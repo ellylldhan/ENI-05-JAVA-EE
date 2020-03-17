@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>AppliDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <description>Servlet module 2 Demonstration 1</description>
+  <servlet-name>PremiereServletConfigurationWebXML</servlet-name>
+  <servlet-class>fr.eni.javaee.modules.module2.PremiereServletConfigurationWebXML</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>PremiereServletConfigurationWebXML</servlet-name>
+  <url-pattern>/modules/module2/PremiereServletConfigurationWebXML</url-pattern>
+  </servlet-mapping> 
+   <servlet>
+  <description>Servlet module 2 Demonstration 8</description>
+  <servlet-name>ServletParamIni</servlet-name>
+  <servlet-class>fr.eni.javaee.modules.module2.ServletAvecParametreInitialisationWebXML</servlet-class>
+  <init-param>
+  <description>Un parametre d'initialisation</description>
+  <param-name>NOM_PARAMETRE</param-name>
+  <param-value>VALEUR_PARAMETRE</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletParamIni</servlet-name>
+  <url-pattern>/modules/module2/ServletAvecParametreInitialisationWebXML</url-pattern>
+  </servlet-mapping> 
+    <servlet>
+  <description>Paramétrage d'une JSP</description>
+  <servlet-name>premiereJSPDansWeb_INF</servlet-name>
+  <jsp-file>/WEB-INF/premiereJSPDansWEB-INF.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>premiereJSPDansWeb_INF</servlet-name>
+  <url-pattern>/modules/module3/PremiereJSP</url-pattern>
+  </servlet-mapping> 
+      <servlet>
+  <description>Paramétrage d'une JSP internationnal</description>
+  <servlet-name>JSP_Inter</servlet-name>
+  <jsp-file>/WEB-INF/internationalisationMessages.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>JSP_Inter</servlet-name>
+  <url-pattern>/modules/module8/JSPInternational</url-pattern>
+  </servlet-mapping> 
+        <servlet>
+  <description>Paramétrage d'une JSP internationnal date</description>
+  <servlet-name>JSP_InterDate</servlet-name>
+  <jsp-file>/WEB-INF/formatageDate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>JSP_InterDate</servlet-name>
+  <url-pattern>/modules/module8/JSPInternationalDate</url-pattern>
+  </servlet-mapping> 
+          <servlet>
+  <description>Paramétrage d'une JSP nombre</description>
+  <servlet-name>JSP_NBRE</servlet-name>
+  <jsp-file>/WEB-INF/formatageNombre.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>JSP_NBRE</servlet-name>
+  <url-pattern>/modules/module8/JSPNbre</url-pattern>
+  </servlet-mapping> 
+  <error-page>
+  <error-code>500</error-code>
+  <location>/modules/module2/demonstrations/erreur500.html</location>
+  </error-page>
+  <error-page>
+    <error-code>403</error-code>
+  <location>/modules/module7/demonstrations/erreur403.html</location>
+  </error-page>
+  
+  <context-param>
+  <description>email de l'administrateur</description>
+  <param-name>EMAIL_ADMINISTRATEUR</param-name>
+  <param-value>admin@AppliDemo.fr</param-value>
+  </context-param>
+</web-app>
+
+
+
