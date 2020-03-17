@@ -1,0 +1,386 @@
+@charset "UTF-8";
+
+/**** imports ****/
+@import url("https://fonts.googleapis.com/css?family=Cairo:400,700");
+
+/**** responsive ****/
+@media screen and (max-width:1920px) {
+	body {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:486px) {
+	body {
+		width: 486px;
+	}
+}
+
+@media screen and (max-width:377px) {
+	body {
+		width: 377px;
+	}
+}
+
+@media screen and (max-width:360px) {
+	body {
+		width: 360px;
+	}
+}
+
+@media screen and (max-width:320px) {
+	body {
+		width: 320px;
+	}
+}
+
+/***** General *****/
+* {
+	font-size: 14px;
+	box-sizing: border-box;
+	font-family: Cairo, 'Arial', sans-serif;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+.btn-group a {
+	background-color: #6093ac;
+	border: 2px solid rgb(255, 255, 237);
+	text-decoration: none;
+	color: white;
+	line-height: 5px;
+	margin: 0 auto;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 5px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+	width: 130px;
+	font-size: 1.2em;
+}
+
+.btn-group a:hover {
+	background: #fff;
+	border: 2px solid black;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
+	line-height: 5px;
+	border-radius: 5px;
+	word-break: break-all;
+}
+
+.btn-group {
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	padding: 2px;
+	text-align: center;
+}
+
+.btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.btn_bas_page {
+	color: white;
+	text-decoration: none;
+	font-size: 1.4em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgb(96, 147, 172);
+	border-radius: 5px;
+	width: 120px;
+	display: block;
+	border: 1px solid grey;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn_bas_page:hover {
+	border: 2px solid black;
+	color: black;
+	font-variant: small-caps;
+	font-weight: bold;
+	background-color: white;
+}
+
+.btn_bas_page_div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap-reverse;
+	align-items: flex-start;
+}
+
+.contenu {
+	border: 2px solid #aaaaaa;
+	padding: 5px;
+	margin: 0;
+	right: 0;
+	left: 0;
+}
+
+.div-footer {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.emphase {
+	font-size: 110%;
+	font-weight: bold;
+	color: black;
+}
+
+.floated {
+	float: left;
+	margin-right: 5px;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+	right: 0;
+	left: 0;
+	font-size: .8em;
+	position: relative;
+	bottom: 0;
+	margin-top: 50px;
+}
+
+.header {
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin: 0;
+	right: 0;
+	left: 0;
+	background-color: #6287ac;
+	font-weight: bold;
+	color: white;
+	font-size: 1.6em;
+	font-variant: small-caps;
+	line-height: 1.2em;
+}
+
+.input {
+	padding-left: 5px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	margin: 0;
+	right: 0;
+	left: 0;
+	text-align: left;
+}
+
+.invisible {
+	display: none;
+}
+
+.lien_ilot {
+	font-size: 1.5em;
+	line-height: 50px;
+	display: block;
+	background: #6093ac;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	border-bottom: 1px solid #fff;
+	margin: 0;
+	right: 0;
+	left: 0;
+	padding-left: 15px;
+	margin-top:10px;
+	border-radius: 5px;
+}
+
+.lien_ilot:hover {
+	background: #fff;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
+	line-height: 48px;
+	border-radius: 5px;
+	border: 2px solid black
+}
+
+.output {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	margin: 0;
+	right: 0;
+	left: 0;
+}
+
+.rotate90 {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.th_special {
+	column-span: all;
+	font-size: 1.1em;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: #6093ac;
+}
+
+.upload_success {
+	color: green;
+	font-weight: bold;
+	text-decoration: blink;
+}
+
+.upload_avert {
+	color: #e29930;
+	font-weight: bold;
+	text-decoration: blink;
+}
+
+.upload_warning {
+	color: red;
+	font-weight: bold;
+	text-decoration: blink;
+}
+
+body {
+	background-color: rgb(255, 255, 237);
+	position: relative;
+	margin: 0;
+	width: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+span {
+	font-size: inherit;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	padding: 2px;
+	margin-bottom: 5px;
+}
+
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td {
+	text-align: left;
+}
+
+th {
+	vertical-align: middle;
+	text-align: left;
+	font-size: .7em;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	-webkit-text-stroke-color: black;
+}
+
+
+tr.first {
+	border-top: 2px solid #5C6664;
+}
+
+.btn-submit {
+	background-color: #6093ac;
+	text-decoration: none;
+	color: white;
+	line-height: 5px;
+	border-radius: 5px;
+	padding: 20px 25px 20px 25px;
+	cursor: pointer; /* Pointer/hand icon */
+	font-size: 1.3em;
+	width: 100px;
+	float: right;
+	right: 40px;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn-submit:hover {
+	background: #fff;
+	border: 2px solid black;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
+	line-height: 5px;
+	border-radius: 5px;
+	word-break: break-all;
+}
+
+.btn-group input {
+	background-color: #6093ac;
+	border: 2px solid rgb(255, 255, 237);
+	text-decoration: none;
+	color: white;
+	line-height: 5px;
+	margin: 0 auto;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 5px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+	width: 130px;
+	font-size: 1.2em;
+}
+
+.btn-group input:hover {
+	background: #fff;
+	border: 2px solid black;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
+	line-height: 5px;
+	border-radius: 5px;
+	word-break: break-all;
+}
+
+#btn_bas_page {
+	border: 2px solid #aaaaaa;
+}
+
+#btn-maj {
+	width: 80%;
+	background-color: #62ac62;
+}
+
+pre {
+	border: 2px solid #e29930;
+	border-radius: 5px;
+	font-family: monospace;
+	width: 80%;
+	padding: 10px;
+}
